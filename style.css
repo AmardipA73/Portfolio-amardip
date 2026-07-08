@@ -1819,3 +1819,209 @@ footer p{
     color:#fff;
 
 }
+
+/* =====================================
+   FINAL MOBILE RESPONSIVE FIX
+===================================== */
+
+@media screen and (max-width:991px){
+
+.header{
+
+    padding:15px 20px;
+
+}
+
+.navbar{
+
+    width:100%;
+
+    flex-direction:column;
+
+    height:auto;
+
+    gap:20px;
+
+}
+
+.logo img{
+
+    width:120px;
+
+}
+
+.nav-menu{
+
+    width:100%;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+}
+
+.hero{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+    padding:130px 25px 60px;
+
+}
+
+.hero-content{
+
+    width:100%;
+
+}
+
+.hero-content h1{
+
+    font-size:42px;
+
+}
+
+.hero-content h2{
+
+    font-size:24px;
+
+}
+
+.hero-description{
+
+    max-width:100%;
+
+    font-size:16px;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero-image{
+
+    margin-bottom:30px;
+
+}
+
+.hero-image img{
+
+    width:260px;
+
+    height:260px;
+
+}
+
+.about-container{
+
+    flex-direction:column;
+
+}
+
+.about-image img{
+
+    width:280px;
+
+    height:auto;
+
+}
+
+.about-content{
+
+    text-align:center;
+
+}
+
+.about-info{
+
+    grid-template-columns:1fr;
+
+}
+
+.timeline::before{
+
+    left:15px;
+
+}
+
+.timeline-item{
+
+    width:100%;
+
+    left:0 !important;
+
+    text-align:left !important;
+
+    padding-left:55px;
+
+    padding-right:10px;
+
+}
+
+.timeline-dot{
+
+    left:5px !important;
+
+}
+
+.skills-container,
+
+.projects-container,
+
+.certificate-container,
+
+.contact-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.project-card img{
+
+    height:200px;
+
+}
+
+.project-buttons{
+
+    flex-direction:column;
+
+}
+
+.contact form{
+
+    width:100%;
+
+}
+
+.resume h2{
+
+    font-size:32px;
+
+}
+
+.section-title h2{
+
+    font-size:34px;
+
+}
+
+section{
+
+    padding:80px 25px;
+
+}
+
+footer{
+
+    padding:40px 20px;
+
+}
+
+}
