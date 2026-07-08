@@ -247,3 +247,23 @@ profile.style.transform="scale(1)";
 });
 
 }
+
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
+
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+
+    if (navMenu.classList.contains("active")) {
+        menuToggle.innerHTML = '<i class="fas fa-times"></i>';
+    } else {
+        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+    }
+});
+
+document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+    });
+});

@@ -2025,3 +2025,47 @@ footer{
 }
 
 }
+/*=========================
+    HAMBURGER MENU
+=========================*/
+
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:#2563EB;
+}
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .navbar{
+        position:relative;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 20px;
+        height:auto;
+    }
+
+    .nav-menu{
+        position:absolute;
+        top:80px;
+        left:-100%;
+        width:100%;
+        background:#fff;
+        flex-direction:column;
+        text-align:center;
+        padding:20px 0;
+        gap:20px;
+        transition:0.4s;
+        box-shadow:0 8px 20px rgba(0,0,0,.1);
+    }
+
+    .nav-menu.active{
+        left:0;
+    }
+}
